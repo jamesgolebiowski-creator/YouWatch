@@ -4,9 +4,8 @@
   <meta charset="UTF-8">                       
   <title>Big Buck Bunny - YouWatch</title>                
 
-<!-- Emoji favicon -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%96%B6%EF%B8%8F%3C/text%3E%3C/svg%3E">
-
+  <!-- Emoji favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%96%B6%EF%B8%8F%3C/text%3E%3C/svg%3E">
 
   <style>
     html, body {
@@ -35,13 +34,15 @@
   </style>
 
   <script>
-    // Redirect on page refresh
+    // Remove local file redirect (insecure)
+    // If you need a redirect, use an HTTPS URL
+    /*
     window.addEventListener("beforeunload", function () {
-      // Set a short delay so the redirect happens after the page is refreshed
       setTimeout(function () {
-        window.location.href = "file:///C:/Users/jbgol/OneDrive/Documents/YouWatch.html";
+        window.location.href = "https://yourdomain.com/YouWatch.html";
       }, 10);
     });
+    */
   </script>
 </head>
 
@@ -50,14 +51,16 @@
     controls
     loop
     autoplay
-    poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217">
-    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-    <source src="BigBuckBunny.webm" type="video/webm">                                                                            
-    <source src="BigBuckBunny.ogv" type="video/ogg">
+    poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg">
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm">                                                                            
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.ogv" type="video/ogg">
     Your browser does not support the video
   </video>
 </body>
 </html>
+
+
 
 
 
